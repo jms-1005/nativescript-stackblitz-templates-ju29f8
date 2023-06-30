@@ -2,8 +2,19 @@
   <page-router-outlet></page-router-outlet>
 </GridLayout> -->
 
-<GridLayout>
-  <StackLayout>
-    <Label [text]="myTitle"></Label>
-  </StackLayout>
-</GridLayout>
+<ScrollView>
+  <GridLayout>
+    <!-- <StackLayout>
+      <Label [text]="myTitle"></Label>
+    </StackLayout> -->
+
+    <StackLayout>
+      <StackLayout *ngFor="let product of products" class="productContainer">
+        <Image [src]="product.image" class="productImage"></Image>
+        <Label [text]="product.title" class="h1"></Label>
+        <Label [text]="product.description" textWrap="true"></Label>
+        <label [text]="'$' + product.price" class="productPrice"></label>
+      </StackLayout>
+    </StackLayout>
+  </GridLayout>
+</ScrollView>

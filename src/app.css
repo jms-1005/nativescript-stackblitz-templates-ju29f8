@@ -8,3 +8,24 @@
 Button.-primary {
   font-size: 18;
 }
+
+.productContainer {
+  margin: 10;
+  padding: 25;
+  border-width: 1;
+  border-color: lightgray;
+  border-radius: 5;
+}
+
+.productImage {
+  width: 100%;
+}
+
+.productPrice {
+  font-weight: bold;
+  font-size: 20;
+}
+
+.h1 {
+  font-size: 25;
+}
