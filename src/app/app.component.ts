@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   myTitle = 'This title is from the component'; 
-  ///this is an edit  
+  ///this is an edit  another edit
 
   products: any[] = [
     {
