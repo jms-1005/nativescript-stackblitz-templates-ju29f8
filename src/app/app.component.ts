@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  myTitle = 'This title is from the component';
+  myTitle = 'This title is from the component'; 
+  ///this is an edit  
 
   products: any[] = [
     {
