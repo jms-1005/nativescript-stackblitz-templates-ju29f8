@@ -12,6 +12,10 @@ export class ProductsComponent implements OnInit {
 
   constructor(private http: HttpClient) {}
 
+  getProductDetails(id: number) {
+    console.log('ID', id);
+  }
+
   ngOnInit() {
     this.http
       .get<any>(

@@ -13,6 +13,7 @@
         *ngFor="let product of productsReal"
         class="productContainer"
         [nsRouterLink]="['/productdetails']"
+        (tap)="getProductDetails(product.id)"
       >
         <Image
           [src]="product.attributes.ProductImages.data[0].attributes.url"
